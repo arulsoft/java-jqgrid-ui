@@ -47,9 +47,9 @@ public class HelloWorldController{
 	      }
 	    logger.info("percentComplete="+contentLength);
 	    long percentComplete = ((100 * bytesRead) / contentLength); 
-	    logger.info("percentComplete="+percentComplete);
-	    out.println(bytesRead);
-	      out.flush();
-	      out.close();
+	    logger.info("bytesRead="+bytesRead+";percentComplete="+percentComplete);
+	    out.println(percentComplete);
+	    out.flush();
+	    out.close();
 	}
 }
