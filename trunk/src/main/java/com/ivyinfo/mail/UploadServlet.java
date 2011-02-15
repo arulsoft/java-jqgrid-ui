@@ -49,6 +49,9 @@ public class UploadServlet extends HttpServlet{
 	            	if(name.lastIndexOf("\\")!=-1){
 	            		name=item.getName().substring(name.lastIndexOf("\\"));
 	            	}
+	            	File   filePath=new   File(request.getRealPath("")+"/temp/"); 
+	            	if(!filePath.exists())
+	            		filePath.mkdirs();
 	                File uploadFile=new File(request.getRealPath("")+"/temp/",name);
 	                
 	                LOGGER.info("upload" + upload+";\nname="+name);
