@@ -117,7 +117,9 @@
             },
 
             initUploadEventHandlers = function (files, index, xhr, settings) {
+            	console.info(func);
                 if (typeof settings.onProgress === func) {
+                	console.info(typeof settings.onProgress === func);
                     xhr.upload.onprogress = function (e) {
                         settings.onProgress(e, files, index, xhr, settings);
                     };
@@ -265,7 +267,9 @@
                 var url = getUrl(settings),
                     sameDomain = isSameDomain(url),
                     filesToUpload;
+                console.info("开始初始化事件处理"+index);
                 initUploadEventHandlers(files, index, xhr, settings);
+                
                 xhr.open(getMethod(settings), url, true);
                 if (sameDomain) {
                     xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
@@ -617,6 +621,7 @@
     };
     
     $.fn.fileUpload = function (method) {
+    	console.info("fn.fileUpload定义 method参数:"+method);
         if (methods[method]) {
             return methods[method].apply(this, Array.prototype.slice.call(arguments, 1));
         } else if (typeof method === 'object' || !method) {
