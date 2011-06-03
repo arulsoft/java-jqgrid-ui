@@ -31,8 +31,9 @@ public class HelloWorldImpl implements HelloWorld {
 	 */
 	public Dto queryBalanceInfo(String jsbh) {
 		IReader reader = (IReader) SpringBeanLoader.getSpringBean("g4Reader");
-		Dto inDto = new BaseDto("sxh", jsbh);
-		Dto outDto = (BaseDto) reader.queryForObject("queryBalanceInfo", inDto);
+		Dto inDto = new BaseDto();
+		inDto.put("menuid", "01");
+		Dto outDto = (BaseDto) reader.queryForObject("queryMenuItemsByDto", inDto);
 		return outDto;
 	}
 
@@ -44,8 +45,9 @@ public class HelloWorldImpl implements HelloWorld {
 	 */
 	public List queryBalanceInfoLimitRownum(Integer rownum) {
 		IReader reader = (IReader) SpringBeanLoader.getSpringBean("g4Reader");
-		Dto inDto = new BaseDto("rownum", rownum);
-		List outList = reader.queryForList("queryBalanceInfo", inDto);
+		Dto inDto = new BaseDto();
+		inDto.put("menuid", "0101");
+		List outList = reader.queryForList("queryMenuItemsByDto", inDto);
 		return outList;
 	}
 
