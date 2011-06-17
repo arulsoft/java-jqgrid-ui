@@ -48,6 +48,15 @@ public class HelloWorldImpl implements HelloWorld {
 		Dto inDto = new BaseDto();
 		inDto.put("menuid", "0101");
 		List outList = reader.queryForList("queryMenuItemsByDto", inDto);
+		
+		inDto = new BaseDto();
+		inDto.put("deptid", "001");
+		inDto.put("start", "0");
+		//{limit=50, deptid=001, firstload=true, start=0, reqCode=queryDeptsForManage, end=50}
+		outList = reader.queryForList("queryDeptsForManage", inDto);
+		
+		inDto = new BaseDto();
+		outList = reader.queryForList("queryMenuItemsForManage", inDto);
 		return outList;
 	}
 
