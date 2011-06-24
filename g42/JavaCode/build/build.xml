@@ -62,7 +62,7 @@
 	<!-- 打war包 -->
 	<target name="war" depends="build">
     	<echo message="正在打war包..." />
-		<war warfile="${war.output}/eRedG4.war" webxml="${build}/WEB-INF/web.xml">
+		<war warfile="${war.output}/njdt.war" webxml="${build}/WEB-INF/web.xml">
 			<fileset dir="${build}" />
 		</war>
 	</target>
