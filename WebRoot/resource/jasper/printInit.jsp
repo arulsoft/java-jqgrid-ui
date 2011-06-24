@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" %>
 <%@ include file="/common/include/taglib.jsp"%>
-<eRedG4:html title="eRedG4.Report:由易道报表组件驱动">
+<eRedG4:html title="Report:由报表组件驱动">
 <eRedG4:body>
     <%-- 为了兼容各种浏览器applet标签的属性被配置2次 --%>
 	<APPLET CODE="org.eredlab.g4.rif.report.jasper.applet.EmbeddedViewerApplet.class" CODEBASE="<%=request.getContextPath()%>/resource/jasper/applets"
