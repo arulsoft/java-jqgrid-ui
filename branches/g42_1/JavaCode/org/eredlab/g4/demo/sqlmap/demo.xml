@@ -345,7 +345,7 @@
 		resultClass="dto">
 		SELECT
 		deptid as id, deptname as text, parentid,sortno,customid,leaf
-		FROM EADEPT
+		FROM eadept
 		<dynamic prepend="WHERE">
 			<isNotEmpty prepend="AND" property="deptid">
 				deptid = #deptid#
