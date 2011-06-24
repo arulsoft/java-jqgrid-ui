@@ -10,8 +10,8 @@ import org.eredlab.g4.rif.server.G4Server;
 public class Run {
 	public static void main(String[] args) {
 		G4Server server = new G4Server(
-				"E:\\download\\eRedG4_V1.2.2\\eRedG4_V1.2.2\\WebRoot",
-				"/eRedG4",
+				"f:\\wh\\g422\\WebRoot",
+				"/njdt",
 				8899
 				);
 		server.stop();

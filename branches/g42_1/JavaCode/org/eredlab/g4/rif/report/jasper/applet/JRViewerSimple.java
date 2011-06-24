@@ -40,7 +40,7 @@ public class JRViewerSimple extends JRViewer {
 	}
 
 	protected void btnPlusActionPerformed(java.awt.event.ActionEvent evt) {
-		JOptionPane.showMessageDialog(this, "此报表由易道系统集成与开发平台报表引擎(eRedG4.Report)强力驱动(BasedJasperReport)\n易道软件实验(中国.昆明)");
+		JOptionPane.showMessageDialog(this, "此报表由信息系统集成与开发平台报表引擎(eRedG4.Report)强力驱动(BasedJasperReport)\n易道软件实验(中国.昆明)");
 	}
 
 }

@@ -10,7 +10,7 @@
 	</div>
 	<div id="aboutDiv" class="x-hidden"
 		style='color: black; padding-left: 10px; padding-top: 10px; font-size: 12px'>
-		易道系统集成与应用开发平台 V1.1 (eRedG4&reg)<br> <br> 版权所有 &copy 2010
+		信息系统集成与应用开发平台 V1.1 (eRedG4&reg)<br> <br> 版权所有 &copy 2010
 		eRedLab&reg <br> <br> <b>技术支持</b><br>
 		Email:eredlab@vip.qq.com<br> <br> 访问项目主页:<a
 			href="http://code.google.com/p/g4-xiongchun/" target="_blank"

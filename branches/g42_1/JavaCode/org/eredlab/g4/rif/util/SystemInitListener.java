@@ -51,7 +51,7 @@ public class SystemInitListener implements ServletContextListener {
 		long start = System.currentTimeMillis();
 		if (forceLoad.equalsIgnoreCase(ArmConstants.FORCELOAD_N)) {
 			System.out.println("********************************************");
-			System.out.println("易道系统集成与应用开发平台[eRedG4]开始启动...");
+			System.out.println("信息系统集成与应用开发平台[eRedG4]开始启动...");
 			System.out.println("********************************************");
 		}
 		try {
@@ -104,10 +104,10 @@ public class SystemInitListener implements ServletContextListener {
 		long timeSec = (System.currentTimeMillis() - start) / 1000;
 		System.out.println("********************************************");
 		if (success) {
-			System.out.println("易道系统集成与应用开发平台[eRedG4]启动成功[" + G4Utils.getCurrentTime() + "]");
+			System.out.println("信息系统集成与应用开发平台[eRedG4]启动成功[" + G4Utils.getCurrentTime() + "]");
 			System.out.println("启动总耗时: " + timeSec / 60 + "分 " + timeSec % 60 + "秒 ");
 		} else {
-			System.out.println("易道系统集成与应用开发平台[eRedG4]启动失败[" + G4Utils.getCurrentTime() + "]");
+			System.out.println("信息系统集成与应用开发平台[eRedG4]启动失败[" + G4Utils.getCurrentTime() + "]");
 			System.out.println("启动总耗时: " + timeSec / 60 + "分" + timeSec % 60 + "秒");
 		}
 		System.out.println("********************************************");
