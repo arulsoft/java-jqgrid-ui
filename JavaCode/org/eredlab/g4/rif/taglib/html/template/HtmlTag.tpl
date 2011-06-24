@@ -1,5 +1,5 @@
 <!--
-此页面代码由易道系统集成与应用开发平台模板引擎组件强力驱动生成
+此页面代码由信息系统集成与应用开发平台模板引擎组件强力驱动生成
      copyRight(c) 2007-2010, 易道软件实验室(eRedLab).
                   www.eredlab.org
 -->
@@ -11,7 +11,7 @@
 <html>
 <head>
 <title>${title}</title>
-<meta http-equiv="keywords" content="eRedLab,eRedG4,易道系统集成与应用开发平台,易道软件实验室">
+<meta http-equiv="keywords" content="eRedLab,eRedG4,信息系统集成与应用开发平台,易道软件实验室">
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta http-equiv="description" content="It's Based eRedG4！copyRight(c) eRedLab">
 <meta http-equiv="pragma" content="no-cache">  

@@ -66,7 +66,7 @@ public class G4Server {
 		 */
 	    if(forceLoad.equals(ArmConstants.FORCELOAD_Y)){
 		    System.out.println("********************************************");
-		    System.out.println("易道系统集成与应用开发平台[eRedG4]开始启动...");
+		    System.out.println("信息系统集成与应用开发平台[eRedG4]开始启动...");
 		    System.out.println("********************************************");
 		    System.out.println("系统正在初始化服务容器...");
 		    SpringBeanLoader.getApplicationContext();
