@@ -52,7 +52,7 @@
 	
 	<!-- 插入一条用户表记录 -->
 	<insert id="saveUserItem" parameterClass="dto">
-		INSERT INTO EAUSER (
+		INSERT INTO eauser (
 		   userid, username, account, 
 		   password, sex, deptid, 
 		   locked, remark, usertype) 
@@ -123,7 +123,7 @@
 	
 	<!-- 插入一条用户角色关联记录 -->
 	<insert id="saveSelectedRole" parameterClass="dto">
-		INSERT INTO EAUSERAUTHORIZE (
+		INSERT INTO eauserAUTHORIZE (
 		   userid, roleid, authorizeid) 
 		VALUES ( #userid#, #roleid#, #authorizeid#)
 	</insert>
@@ -165,6 +165,6 @@
 		SELECT userid, username, account, 
 		   password, sex, deptid, 
 		   locked, remark, usertype
-		 FROM EAUSER  WHERE userid = #userid#
+		 FROM eauser  WHERE userid = #userid#
 	</select>
 </sqlMap>

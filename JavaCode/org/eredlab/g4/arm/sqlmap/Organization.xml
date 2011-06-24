@@ -36,7 +36,7 @@
 	<select id="queryDeptItemsByDto" parameterClass="map" resultClass="dto">
 		SELECT 
 		   deptid as id, deptname as text, parentid,leaf,sortno
-		FROM EADEPT
+		FROM eadept
 		<dynamic prepend="WHERE">
 			<isNotEmpty prepend="AND" property="deptid"> 
 				deptid = #deptid#

@@ -102,7 +102,7 @@
 	<select id="queryMenuItemsByDto" parameterClass="map" resultClass="dto">
 		SELECT 
 		   menuid as id, menuname as text, parentid, request,leaf
-		FROM EAMENU
+		FROM eamenu
 		<dynamic prepend="WHERE">
 			<isNotEmpty prepend="AND" property="menuid"> 
 				menuid = #menuid#
