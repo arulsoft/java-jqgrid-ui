@@ -6,7 +6,7 @@
 	<target name="init">
 		<property name="name" value="eRedG4" />
 		<property name="src" value="${basedir}/JavaCode" />
-		<property name="lib" value="${basedir}/Lib" />
+		<property name="lib" value="E:/download/eRedG4_V1.2.2/eRedG4_V1.2.2/Lib" />
 		<property name="webapp" value="${basedir}/WebRoot" />
 
 		<property name="temp.src" value="${basedir}/AntBuild/src" />
@@ -62,7 +62,7 @@
 	<!-- 打war包 -->
 	<target name="war" depends="build">
     	<echo message="正在打war包..." />
-		<war warfile="${war.output}/eRedG4.war" webxml="${build}/WEB-INF/web.xml">
+		<war warfile="${war.output}/njdt.war" webxml="${build}/WEB-INF/web.xml">
 			<fileset dir="${build}" />
 		</war>
 	</target>
