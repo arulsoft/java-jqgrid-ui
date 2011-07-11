@@ -59,5 +59,14 @@ public class HelloWorldImpl implements HelloWorld {
 		outList = reader.queryForList("queryMenuItemsForManage", inDto);
 		return outList;
 	}
+	
+	@Override
+	public List queryMenuItems(String nodeid) {
+		IReader reader = (IReader) SpringBeanLoader.getSpringBean("g4Reader");
+		Dto inDto = new BaseDto();
+		inDto.put("menuid", nodeid);
+		List outList = reader.queryForList("queryMenuItemsByDto", inDto);
+		return outList;
+	}
 
 }
