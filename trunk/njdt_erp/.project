@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>njdt_erp</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>JavaCode</name>
+			<type>2</type>
+			<location>D:/G4Studio_V3.1/JavaCode</location>
+		</link>
+		<link>
+			<name>WebRoot</name>
+			<type>2</type>
+			<location>D:/G4Studio_V3.1/WebRoot</location>
+		</link>
+	</linkedResources>
+</projectDescription>
