@@ -10,7 +10,7 @@ import org.eredlab.g4.rif.server.G4Server;
 public class Run {
 	public static void main(String[] args) {
 		G4Server server = new G4Server(
-				"D:\\G4Studio_V3.1\\WebRoot",
+				"F:\\workspace\\njdt_erp\\webapp",
 				"/njdterp",
 				8899
 				);
