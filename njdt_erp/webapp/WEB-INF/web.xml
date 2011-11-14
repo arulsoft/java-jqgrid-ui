@@ -148,6 +148,21 @@
 			<location>/common/error/500.jsp</location>
 		</error-page>
 		 -->
+
+	<servlet>
+		<description>
+		</description>
+		<display-name>Hello</display-name>
+		<servlet-name>Hello</servlet-name>
+		<servlet-class>
+		test.Hello</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Hello</servlet-name>
+		<url-pattern>/Hello</url-pattern>
+	</servlet-mapping>
+			 
 	<listener><listener-class>php.java.servlet.ContextLoaderListener</listener-class></listener>
  <servlet><servlet-name>PhpJavaServlet</servlet-name><servlet-class>php.java.servlet.PhpJavaServlet</servlet-class>
  </servlet>
