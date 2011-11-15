@@ -7,6 +7,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import php.java.servlet.RemoteHttpServletContextFactory;
+
 /**
  * Servlet implementation class Hello
  */
@@ -26,6 +28,7 @@ public class Hello extends HttpServlet {
      */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    	request.getSession().setAttribute("i", 1);
         response.getWriter().write("HelloServlet is running!");
     }
 
@@ -43,6 +46,7 @@ public class Hello extends HttpServlet {
 
         try {
             ctx.handleRequests(request.getInputStream(), response.getOutputStream());
+            request.getSession().setAttribute("i", 1);
         }
         finally {
             ctx.destroy();
