@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+	"http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="urlMap">
+			<map>
+				<entry key="/userServices">
+					<ref bean="userServices" />
+				</entry>
+			</map>
+		</property>
+	</bean>
+	
+	<bean id="userServices" class="org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter">
+		<property name="service">
+			<bean class="com.ivyinfo.user.services.UserServicesImpl" />
+		</property>
+		<property name="serviceInterface" value="com.ivyinfo.user.services.UserServices" />
+	</bean>
+</beans>
