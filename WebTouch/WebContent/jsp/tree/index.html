@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!--  
+<link type="text/css" rel="stylesheet" href="http://216.108.229.26/jstree/_docs/syntax/!style.css"/>
+-->
+	<!--  
+	<link type="text/css" rel="stylesheet" href="http://216.108.229.26/jstree/_docs/!style.css"/>
+	-->
+</head>
+<body>
+	<h2>异步加载树</h2>
+	<hr></hr>
+<div id="mmenu" style="height:40px; overflow:auto;">
+<a href="#" class="button">add folder</a>
+<a href="#" class="button" id="add">add file</a>
+<a href="#" class="button" id="delete">rename</a>
+<a href="#" class="button" id="delete">remove</a>
+<a href="#" class="button" id="delete">cut</a>
+<a href="#" class="button" id="delete">copy</a>
+<a href="#" class="button" id="delete">paste</a>
+
+<a href="#" class="button" id="delete" style="display:block; float:right;">clear</a>
+<a href="#" class="button" id="delete" style="display:block; float:right;">search</a>
+<input type="text" id="text" value="" style="display:block; float:right;" />
+</div>
+
+<!-- the tree container (notice NOT an UL node) -->
+<div id="demotree" class="demotree"></div>
+
+
+<!-- JavaScript neccessary for the tree -->
+<script type="text/javascript" class="source below">
+$(function () {
+$("#demotree")
+	.jstree({ 
+		// List of active plugins
+		"plugins" : [ 
+			"themes","json_data" 
+		],
+		"json_data" : { 
+			"ajax" : {
+				"url" : "menuTreeTest.action",
+				"data" : function (n) { 
+					return { 
+						"operation" : "get_children", 
+						"id" : n.attr ? n.attr("id") : "0102" 
+					}; 
+				}
+			}
+		},
+	"themes" : {
+        "theme" : "classic",
+        "dots" : true,
+        "icons" : true 
+	}
+	});
+});
+</script>
+</body> 
+</html>
